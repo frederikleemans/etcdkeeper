@@ -2,7 +2,7 @@
 
 
 [[projects]]
-  name = "github.com/coreos/etcd"
+  name = "go.etcd.io/etcd"
   packages = ["auth/authpb","clientv3","etcdserver/api/v3rpc/rpctypes","etcdserver/etcdserverpb","mvcc/mvccpb"]
   revision = "d0d1a87aa96ae14914751d42264262cb69eda170"
   version = "v3.2.5"
