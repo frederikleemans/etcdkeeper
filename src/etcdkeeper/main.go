@@ -567,7 +567,7 @@ func connect(w http.ResponseWriter, r *http.Request) {
 	passwd := r.FormValue("passwd")
 
 	if *useAuth {
-		if _, ok := rootUsers[host]; !ok {
+		if _, ok := rootUsers[host]; !ok && uname != "root" { // no root user
 			b, _ := json.Marshal(map[string]interface{}{"status":"root"})
 			io.WriteString(w, string(b))
 			return
