@@ -3,7 +3,7 @@ FROM golang:1.9-alpine as builder
 RUN apk add -U git \
     && go get github.com/golang/dep/...
 
-WORKDIR /go/src/github.com/evildecay/etcdkeeper
+WORKDIR /go/src/github.com/frederikleemans/etcdkeeper
 
 ADD src ./
 ADD Gopkg.* ./
@@ -22,7 +22,7 @@ RUN apk add --no-cache ca-certificates
 RUN apk add --no-cache ca-certificates
 
 WORKDIR /etcdkeeper
-COPY --from=builder /go/src/github.com/evildecay/etcdkeeper/etcdkeeper.bin .
+COPY --from=builder /go/src/github.com/frederikleemans/etcdkeeper/etcdkeeper.bin .
 ADD assets assets
 
 EXPOSE ${PORT}

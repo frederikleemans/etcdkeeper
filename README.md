@@ -1,4 +1,4 @@
-![image](https://github.com/evildecay/etcdkeeper/blob/master/logo/logo-horizontal.png)
+![image](https://github.com/frederikleemans/etcdkeeper/blob/master/logo/logo-horizontal.png)
 ## ETCD Keeper
 * Lightweight etcd web client.
 * Support etcd 2.x and etcd 3.x.
@@ -8,7 +8,7 @@
 ## Usage
 * Run etcdkeeper.exe (windows version)
 * Run etcdkeeper.exe -auth (If enable etcd authentication)
-* [Download other platform releases](https://github.com/evildecay/etcdkeeper/releases).
+* [Download other platform releases](https://github.com/frederikleemans/etcdkeeper/releases).
 ```
   Usage of etcdkeeper.exe:
   -h string
@@ -51,10 +51,10 @@
 Because the etcdv3 version uses the new storage concept, without the catalog concept, the client uses the previous default "/" delimiter to view. See the documentation for etcdv3 [clientv3 doc](https://godoc.org/go.etcd.io/etcd/clientv3).
 
 ## Screenshots
-![image](https://github.com/evildecay/etcdkeeper/blob/master/screenshots/ui.png)
+![image](https://github.com/frederikleemans/etcdkeeper/blob/master/screenshots/ui.png)
 
 ## Demo
-![image](https://github.com/evildecay/etcdkeeper/blob/master/screenshots/ui.gif)
+![image](https://github.com/frederikleemans/etcdkeeper/blob/master/screenshots/ui.gif)
 
 ## License
 MIT
